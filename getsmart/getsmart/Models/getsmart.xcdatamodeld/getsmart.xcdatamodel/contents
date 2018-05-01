@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Clients" representedClassName="Client" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="business_card_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="certification_of_business_registration_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="name_of_company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updated_at" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="ProjectItems" representedClassName="ProjectItem" syncable="YES">
+        <attribute name="item_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="price_without_vat" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="product_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="row" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit_price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="vat" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Projects" inverseName="projectItems" inverseEntity="Projects" syncable="YES"/>
+    </entity>
+    <entity name="Projects" representedClassName="Project" syncable="YES">
+        <attribute name="row" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sub_total_price" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sub_total_price_without_vat" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sub_total_vat" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title" attributeType="String" defaultValueString="새 프로젝트" syncable="YES"/>
+        <relationship name="projectItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectItems" inverseName="project" inverseEntity="ProjectItems" syncable="YES"/>
+        <relationship name="quotation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Quotations" inverseName="projects" inverseEntity="Quotations" syncable="YES"/>
+    </entity>
+    <entity name="Quotations" representedClassName="Quotation" syncable="YES">
+        <attribute name="email_received_datetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email_sent_datetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fax_received_datetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fax_sent_datetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="receiver_fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receiver_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receiver_name_of_company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receiver_tel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_business_item" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_business_registration_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_business_stamp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_business_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_name_of_company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_name_of_representative" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_tel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender_website" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sent_datetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="serial" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sms_received_datetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="sms_sent_datetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="terms_of_payment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total_price" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="total_price_without_vat" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="total_vat" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="validity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="projects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Projects" inverseName="quotation" inverseEntity="Projects" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Clients" positionX="-18" positionY="-9" width="128" height="195"/>
+        <element name="ProjectItems" positionX="-522" positionY="342" width="128" height="210"/>
+        <element name="Projects" positionX="-362" positionY="414" width="128" height="150"/>
+        <element name="Quotations" positionX="-198" positionY="-9" width="128" height="553"/>
+    </elements>
+</model>
