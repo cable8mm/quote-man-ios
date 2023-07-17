@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E899D13650BC9BB0CC3F42B /* Pods_getsmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF889782D4C16EAE418ED5C /* Pods_getsmart.framework */; };
 		AB021ADB1B41CECA00B0DFFD /* QuoteGeneralTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB021ADA1B41CECA00B0DFFD /* QuoteGeneralTableViewController.m */; };
 		AB021ADE1B4254F200B0DFFD /* QuoteAddItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB021ADD1B4254F200B0DFFD /* QuoteAddItemTableViewController.m */; };
 		AB021AE11B42670600B0DFFD /* QuoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB021AE01B42670600B0DFFD /* QuoteDetailViewController.m */; };
@@ -62,7 +63,6 @@
 		ABF462751B41863900AF6DCE /* QuoteReceiverInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF462741B41863900AF6DCE /* QuoteReceiverInfoTableViewController.m */; };
 		ABF462781B41910C00AF6DCE /* QuoteValidPeriodListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF462771B41910C00AF6DCE /* QuoteValidPeriodListTableViewController.m */; };
 		ABF4627B1B41A07600AF6DCE /* QuoteMemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4627A1B41A07600AF6DCE /* QuoteMemoViewController.m */; };
-		B5035E632FC67BC96D56EE85 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 476933751D9995BC81211CB3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +76,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		476933751D9995BC81211CB3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6A420F64AE92F90147254F /* Pods-getsmart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getsmart.release.xcconfig"; path = "../Pods/Target Support Files/Pods-getsmart/Pods-getsmart.release.xcconfig"; sourceTree = "<group>"; };
 		5FB0F6984660C43F813B90BD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8DF889782D4C16EAE418ED5C /* Pods_getsmart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_getsmart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F60793A29AB221A2535E7FA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AB021AD91B41CECA00B0DFFD /* QuoteGeneralTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoteGeneralTableViewController.h; sourceTree = "<group>"; };
 		AB021ADA1B41CECA00B0DFFD /* QuoteGeneralTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoteGeneralTableViewController.m; sourceTree = "<group>"; };
@@ -182,6 +183,7 @@
 		ABF462771B41910C00AF6DCE /* QuoteValidPeriodListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoteValidPeriodListTableViewController.m; sourceTree = "<group>"; };
 		ABF462791B41A07600AF6DCE /* QuoteMemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuoteMemoViewController.h; sourceTree = "<group>"; };
 		ABF4627A1B41A07600AF6DCE /* QuoteMemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuoteMemoViewController.m; sourceTree = "<group>"; };
+		F255FC9B7854CB394982655F /* Pods-getsmart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getsmart.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-getsmart/Pods-getsmart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB428E431B4D8C670007C3E7 /* CoreData.framework in Frameworks */,
-				B5035E632FC67BC96D56EE85 /* libPods.a in Frameworks */,
+				5E899D13650BC9BB0CC3F42B /* Pods_getsmart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +211,8 @@
 			children = (
 				5FB0F6984660C43F813B90BD /* Pods.debug.xcconfig */,
 				9F60793A29AB221A2535E7FA /* Pods.release.xcconfig */,
+				F255FC9B7854CB394982655F /* Pods-getsmart.debug.xcconfig */,
+				4C6A420F64AE92F90147254F /* Pods-getsmart.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -447,7 +451,7 @@
 			isa = PBXGroup;
 			children = (
 				AB428E421B4D8C670007C3E7 /* CoreData.framework */,
-				476933751D9995BC81211CB3 /* libPods.a */,
+				8DF889782D4C16EAE418ED5C /* Pods_getsmart.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -459,11 +463,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABD572FB1B33F68400BAB346 /* Build configuration list for PBXNativeTarget "getsmart" */;
 			buildPhases = (
+				84873E69B015712D7FD6786D /* [CP] Check Pods Manifest.lock */,
 				14020E2FE93B41C10DDF97DB /* Check Pods Manifest.lock */,
 				ABD572D11B33F68400BAB346 /* Sources */,
 				ABD572D21B33F68400BAB346 /* Frameworks */,
 				ABD572D31B33F68400BAB346 /* Resources */,
-				E1964E8C4DD2B8F65CDF7D4E /* Copy Pods Resources */,
+				CF9DD76C56F8B9C7EEF47096 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -518,6 +523,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -573,19 +579,44 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E1964E8C4DD2B8F65CDF7D4E /* Copy Pods Resources */ = {
+		84873E69B015712D7FD6786D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-getsmart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9DD76C56F8B9C7EEF47096 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-getsmart/Pods-getsmart-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-getsmart/Pods-getsmart-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -765,14 +796,14 @@
 		};
 		ABD572FC1B33F68400BAB346 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FB0F6984660C43F813B90BD /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F255FC9B7854CB394982655F /* Pods-getsmart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RBD5GD4CA;
 				INFOPLIST_FILE = getsmart/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -783,14 +814,14 @@
 		};
 		ABD572FD1B33F68400BAB346 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F60793A29AB221A2535E7FA /* Pods.release.xcconfig */;
+			baseConfigurationReference = 4C6A420F64AE92F90147254F /* Pods-getsmart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7RBD5GD4CA;
 				INFOPLIST_FILE = getsmart/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

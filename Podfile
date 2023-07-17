@@ -1,4 +1,7 @@
-platform :ios, 7.1
+platform :ios, '15.5'
+use_frameworks!
 
-xcodeproj '/Users/leesamgu/Workspaces/iphonespaces/getsmart/getsmart/getsmart.xcodeproj'
-pod 'SSZipArchive', '~> 0.3.2'
+target 'getsmart' do
+    project 'getsmart/getsmart.xcodeproj'
+    pod 'SSZipArchive', '~> 2.5'
+end

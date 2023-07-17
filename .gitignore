@@ -1,5 +1,13 @@
-# Created by https://www.toptal.com/developers/gitignore/api/objective-c,swift,xcode,macos,visualstudiocode,git
-# Edit at https://www.toptal.com/developers/gitignore?templates=objective-c,swift,xcode,macos,visualstudiocode,git
+# Created by https://www.toptal.com/developers/gitignore/api/objective-c,swift,xcode,macos,visualstudiocode,git,cocoapods
+# Edit at https://www.toptal.com/developers/gitignore?templates=objective-c,swift,xcode,macos,visualstudiocode,git,cocoapods
+
+### CocoaPods ###
+## CocoaPods GitIgnore Template
+
+# CocoaPods - Only use to conserve bandwidth / Save time on Pushing
+#           - Also handy if you have a large number of dependant pods
+#           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
+Pods/
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -201,4 +209,4 @@ Dependencies/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/objective-c,swift,xcode,macos,visualstudiocode,git
+# End of https://www.toptal.com/developers/gitignore/api/objective-c,swift,xcode,macos,visualstudiocode,git,cocoapods
